@@ -6,7 +6,7 @@ import banner4 from "../assets/images/banner4.png";
 import banner5 from "../assets/images/banner5.png";
 import toggle from "../assets/images/toggle.png";
 
-const Banner = () => {
+const Banner = ({ showNewsButton = true, showToggleImage = false }) => {
   // Images and corresponding text content
   const images = [
     {
@@ -50,10 +50,14 @@ const Banner = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-      <div className="description d-flex pt-2  justify-content-between p-2 ">
-        <button className=" btn border rounded-pill "> News</button>
-
-        <img src={toggle} alt="image" />
+      <div
+        className=" d-flex pt-2 justify-content-between p-2"
+        id="description"
+      >
+        {showNewsButton && (
+          <button className="btn border rounded-pill">News</button>
+        )}
+        {showToggleImage && <img src={toggle} alt="toggle" />}
       </div>
     </div>
   );

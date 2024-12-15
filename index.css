@@ -1,0 +1,11 @@
+body {
+  z-index: 0;
+  overflow: hidden;
+  gap: 16px;
+  overflow-y: auto;
+  white-space: nowrap;
+  background-image: url("C:\Users\devan\OneDrive\Desktop\coinryze\src\assets\images\shouye.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

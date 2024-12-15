@@ -1,26 +1,20 @@
 import React from "react";
-import Header from "./component/header.jsx";
-import Banner from "./component/banner.jsx";
-import Entry from "./component/entry.jsx";
-import Task from "./component/task.jsx";
-import Trade from "./component/top-trade.jsx";
-import Data from "./component/market-data.jsx";
-import Footer from "./component/footer.jsx";
-import "./assets/App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage.jsx";
+import NewsPage from "./pages/NewsPage.jsx";
+import PageNotFound from "./pages/PageNotFound.jsx";
+import About from "./pages/about.jsx";
 
 const App = () => {
   return (
-    <div className="content">
-      <Header />
-      <div className="main">
-        <Banner />
-        <Entry />
-        <Task />
-        <Trade />
-        <Data />
-      </div>
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/coinRyze/" element={<HomePage />} />
+        <Route path="/coinRyze/news" element={<NewsPage />} />
+        {/* Always keep the wildcard route last */}
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+    </Router>
   );
 };
 

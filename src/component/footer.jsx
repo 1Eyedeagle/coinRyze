@@ -23,7 +23,10 @@ const Footer = () => {
               </a>
             </span>
             <span>
-              <a href="#" className="  text-decoration-none text-center">
+              <a
+                href="/coinRyze/news"
+                className="  text-decoration-none text-center"
+              >
                 <div className="d-flex justify-content-center align-item-cemter">
                   <i className="bi bi-chat-right-text"></i>
                 </div>
