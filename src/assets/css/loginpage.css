@@ -1,0 +1,65 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 90%;
+  max-width: 400px;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ryze {
+  color: #3a76f0;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.login-button,
+.register-button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #3a76f0;
+  color: white;
+}
+
+.register-button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #3a76f0;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.or {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #999;
+}

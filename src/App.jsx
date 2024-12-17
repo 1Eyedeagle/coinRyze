@@ -4,11 +4,13 @@ import HomePage from "./pages/HomePage.jsx";
 import NewsPage from "./pages/NewsPage.jsx";
 import PageNotFound from "./pages/PageNotFound.jsx";
 import About from "./pages/about.jsx";
+import LoginPage from "./component/loginpage.jsx";
 
 const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/coinRyze/login" element={<LoginPage />} />
         <Route path="/coinRyze/" element={<HomePage />} />
         <Route path="/coinRyze/news" element={<NewsPage />} />
         {/* Always keep the wildcard route last */}

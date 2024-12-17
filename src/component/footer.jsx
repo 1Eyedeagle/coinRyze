@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-12 d-flex justify-content-between align-items-center ">
             <span>
-              <a href="#" className="text-decoration-none text-center">
+              <a href="/coinRyze/" className="text-decoration-none text-center">
                 <div className="d-flex justify-content-center align-item-cemter">
                   <i className="bi bi-house"></i>
                 </div>

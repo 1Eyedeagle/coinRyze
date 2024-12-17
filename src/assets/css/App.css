@@ -7,20 +7,19 @@
     Microsoft Yahei, sans-serif;
 }
 
-@media (max-width: 719px) {
-  h3 {
-    font-size: 20px !important;
-  }
-  h4 {
-    font-size: 16px !important;
-  }
-  h5 {
-    font-size: 11px !important;
-  }
-  h6 {
-    font-size: 10px !important;
-  }
+h3 {
+  font-size: 20px !important;
 }
+h4 {
+  font-size: 16px !important;
+}
+h5 {
+  font-size: 11px !important;
+}
+h6 {
+  font-size: 10px !important;
+}
+
 @media (min-width: 720px) {
   h3 {
     font-size: 34px !important;
@@ -39,16 +38,6 @@
   }
 }
 
-.container-fluid {
-  padding: 10px 0px;
-}
-.content {
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
 .main {
   padding: 70px 20px 60px 20px;
 }
@@ -350,7 +339,7 @@
   .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: -30px !important;
+    bottom: -45px !important;
     left: 20% !important;
   }
 }

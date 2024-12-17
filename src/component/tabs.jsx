@@ -452,7 +452,11 @@ const TabSection = () => {
     },
     {
       title: "Announcement",
-      content: "",
+      content: (
+        <div className="container p-0">
+          <AnnouncementDropdown announcements={announcements} />
+        </div>
+      ),
     },
   ];
 
@@ -474,9 +478,6 @@ const TabSection = () => {
       <div className="tab-content">
         {/* Step 4: Render the content of the active tab */}
         {tabs[activeTab].content}
-      </div>
-      <div className="container p-0">
-        <AnnouncementDropdown announcements={announcements} />
       </div>
     </div>
   );
