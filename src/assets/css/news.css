@@ -1,0 +1,133 @@
+header {
+  background-color: #100d29;
+}
+.newspage .main {
+  padding-top: 20px;
+}
+#news .carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: -25px !important;
+  left: 4%;
+  padding: 0px !important;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+}
+#news #description {
+  height: 20px;
+}
+
+#news .news-section .img-fluid {
+  width: 45%;
+  border-radius: 10px;
+}
+.news-content {
+  padding-top: 10px;
+}
+.news-content h5 {
+  white-space: normal;
+  font-size: 11px;
+  margin: 0px;
+}
+
+.news-content h6 {
+  font-size: 12px;
+  margin: 0px;
+  transform: scale(0.83);
+  transform-origin: left center;
+  color: hsla(0, 0%, 100%, 0.5);
+}
+@media (min-width: 765px) {
+  #news #description {
+    height: 30px;
+  }
+  #news .carousel-caption {
+    left: -550px !important;
+  }
+  #news #description {
+    height: 50px !important;
+  }
+  #news .news-section .img-fluid {
+    width: 40%;
+    border-radius: 20px !important;
+  }
+
+  .news-content {
+    padding-top: 50px;
+  }
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  background-color: #100d29;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  width: 50%;
+  cursor: pointer;
+  background-color: #100d29;
+  border: none;
+}
+
+.tab-button.active {
+  background-color: #18153d;
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.tab-content {
+  margin-top: 20px;
+  background: transparent;
+  row-gap: 20px !important;
+}
+
+.news-section {
+  border-radius: 15px;
+  background-color: #0e0b31;
+}
+
+.announcement-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #0e0b31;
+  border-radius: 8px;
+  display: block !important;
+  word-wrap: break-word; /* Ensures text breaks to fit */
+  word-break: break-word; /* Handles long unbreakable words */
+  white-space: normal; /* Allows text to wrap normally */
+  overflow-wrap: anywhere; /* Breaks at any point if needed */
+}
+.announcement-content {
+  padding: 10px;
+  background-color: #0e0b31;
+  font-size: 14px !important;
+  color: #ccc !important;
+}
+
+.announcement-detail {
+  word-wrap: break-word; /* Ensures text breaks to fit */
+  word-break: break-word; /* Handles long unbreakable words */
+  white-space: normal; /* Allows text to wrap normally */
+  overflow-wrap: anywhere; /* Breaks at any point if needed */
+}
+
+.announcement-header h5::after {
+  content: "";
+  display: block;
+  width: 100%; /* Width of the line */
+  height: 1px; /* Thickness of the line */
+  background-color: #ccc; /* Line color */
+  margin: 8px auto 0; /* Spacing and center alignment */
+}
+
+.announcement-header span {
+  text-align: right !important;
+  font-size: 12px;
+}
+
+.announcement-header h5 {
+  font-size: 16px !important;
+}

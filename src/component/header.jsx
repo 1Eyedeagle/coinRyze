@@ -1,4 +1,3 @@
-import "../assets/App.css";
 import gift from "../assets/images/gift.png";
 const Header = () => {
   return (
