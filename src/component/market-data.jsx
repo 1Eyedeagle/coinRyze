@@ -61,7 +61,7 @@ const Data = () => {
             <img
               src={crypto.image}
               alt={`${crypto.name} logo`}
-              // style={{ height: "50px" }}
+              style={{ height: "50px" }}
             />
             <h4>
               <strong>{crypto.name}</strong>
